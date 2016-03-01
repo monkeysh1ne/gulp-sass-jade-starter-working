@@ -1,0 +1,8 @@
+IMPORTANT!!
+===========
+
+
+To resolve the node-sass ERR issues do the following in Ubuntu terminal:
+
+1. npm uninstall gulp-sass
+2. npm install gulp-sass@2
