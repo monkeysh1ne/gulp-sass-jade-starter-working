@@ -1,4 +1,19 @@
 @import 'variables'
+@import 'colors'
 
 body
 	background: $primary-color
+
+.container
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	justify-content: center
+
+.item
+	flex: auto //auto stretch/shrink
+	// width: 150px
+	height: 150px
+	margin: 25px
+	padding 5px
+	background: $flex-item-bg
