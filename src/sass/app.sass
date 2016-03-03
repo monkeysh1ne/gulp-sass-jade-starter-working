@@ -1,43 +1,23 @@
 @import 'variables'
 @import 'colors'
 @import 'vendor/typeplate'
-@import 'vendor/typeplate-vars'
-@import 'vendor/typeplate-extends'
-@import 'vendor/typeplate-functions'
-@import 'vendor/typeplate-helpers'
-@import 'vendor/typeplate-mixins'
-@import 'vendor/typeplate-styles'
 
 body
 	background: $primary-bg-color
 
 .container
 	display: flex
-	flex-direction: row
-	flex-wrap: nowrap
+	flex-flow: row nowrap
 	justify-content: flex-start
-	align-items: center
 
 .item
-	flex: 0
-	width: 250px
-	// height: 150px
-	margin: 25px
-	padding 5px
-	background: $flex-item-bg
+	flex: 0 1 auto
+	// width: 100px
+	height: 100px
+	background: $flax
 
-.item-flex-auto
-	flex: auto
-	width: 250px
-	// height: 150px
-	margin: 25px
-	padding 5px
-	background: $flex-item-bg
+code>strong
+	color: $sassyRed
 
-.item-flex-1
-	flex: 1
-	width: 250px
-	// height: 150px
-	margin: 25px
-	padding 5px
-	background: $flex-item-bg
+#typeAnatomyIllustration
+	max-width: 700px

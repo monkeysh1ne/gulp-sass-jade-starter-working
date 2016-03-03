@@ -2,12 +2,31 @@ doctype html
 html(lang='de')
 	head
 		meta(charset='utf-8')
-		title It works!
+		title Jade-Sass-Gulp-Starter
+		//- bootstrap 3.3.6 css CDN
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
 		link(rel='stylesheet', href=url('css/app.css'))
-	body
-		.container
-			.item
-				h1.typl8-beta Starting work on typography setup.
+
+	body 
+		h1.typl8-alpha Base Type
+		p This is what an ordinary, unadorned paragraph looks like.  Pretty uninteresting really.  Although it does bear noting the default font-size and line-height.  Also see what happens with word-breaks and hyphenation.  Actually, it's not that <em>uninteresting</em> after all!  There's also the matter of default 'color', which I believe is not full black.  More something like #444 or #222 I believe.  There's also the choice of serifed or non-serifed font for the base.
+		p Personally, I find the page eminently readable.  Not so much for the content but rather the easy flow of typ across the page.  The result is easy on the eye too with regard to the choice of background &amp; foreground colors.
+		p Note also the default use of <strong>indents</strong> on paragraph text after the 1st paragraph.  Note something I expected!
+		h1.typl8-alpha Some slightly more advanced type...
+		p Let's look at for example, <abbr>small caps</abbr>, what are <em>they</em> all about?  These can be accessed through the '&#60;abbr&#62;' tag.
+		
+		.panel.panel-primary
+			.panel-heading 
+				h3.panel-title Drop Caps (inside Bootstrap panel)
+			.panel-body
+				p.typl8-drop-cap Then there's the always impressive, drop-cap <span class="glyphicon glyphicon-thumbs-up"></span>.  Some say it should go the way of the dinosaur.  For me?  Dunno, I still kinda like em!  Especially if they are of the style with those beautiful colors and gold edging and stuff.  Man, those rock! 
+		
+
+		h3 Let's move on to &#60;small&#62; tagged entities...
+		p The following could be a quote, a copyright or other legal disclaimer or attribution.  Maybe it's just something I want to appear in smaller print (you know - like the fine print on sales advertising XD )
+		p <small>- You just know there's a 'gotcha!' in there somewhere!</small>
+
+		h1.typl8-giga Typl8 Headings.
 		h1.typl8-giga Heading Giga
 		h1.typl8-mega Heading Mega
 		h1.typl8-alpha Heading Alpha
@@ -16,19 +35,33 @@ html(lang='de')
 		h4.typl8-delta Heading Delta
 		h5.typl8-epsilon Heading Epsilon
 		h6.typl8-zeta Heading Zeta
+		
+		h3.typl8-gamma Code
+		p The following is an example of how text with the class of 'code' renders (using &#60;pre&#62; &amp; &#60;code&#62; tags):
+		pre
+			code
+				| &#60;DOCTYPE! html&#62;
+				|	&#60;html&#62;
+				|		&#60;head&#62;
+				|			&#60;title>Some title&#60;/title&#62;
+				|		&#60;/head&#62;
+				|		&#60;body&#62;
+				|			&#60;p&#62;&#60;em&#62;<strong>Some really important shit</strong>&#60;/em&#62;&#60;/p&#62;
+				|		...
+				|		
 
-		hr
-		section
-			h5.typl8-epsilon Pooh Gibberish
-			p Firs, all begans houd he-Pooh woney." song asn't Fris so name climself a by himb the iter Robin he the can an?" The yout buzzin. I knois a ge the therst and likes? Buzzing hon at a bed it." Ther the of the-the does? Buzz! Buzzinnie-Pooree." an he making, Wing son't lits abody's asonly he this place san?" The thing a became son," San this mid I a limb this: "The ou're, justo all hinny res of this he climettlethe a becaust and It unnie-Poor Robink. "And by iself the grome noiself ist, Wing his I when
-			h5.typl8-epsilon Word-Break / Hyphenate test
-			.container
-				.item
-					h4.typl8.delta Flex='0'
-					p http://keep.your.dirty/little/hands/out/of_my_stuff!  http://keep.your.dirty/little/hands/out/of_my_stuff!  http://keep.your.dirty/little/hands/out/of_my_stuff!  http://keep.your.dirty/little/hands/out/of_my_stuff!  http://keep.your.dirty/little/hands/out/of_my_stuff!
-			.item-flex-auto
-					h4.typl8.delta Flex='auto'
-					p http://keep.your.dirty/little/hands/out/of_my_stuff!  http://keep.your.dirty/little/hands/out/of_my_stuff!  http://keep.your.dirty/little/hands/out/of_my_stuff!  http://keep.your.dirty/little/hands/out/of_my_stuff!  http://keep.your.dirty/little/hands/out/of_my_stuff!
-			.item-flex-1
-					h4.typl8.delta Flex='1'
-					p http://keep.your.dirty/little/hands/out/of_my_stuff!  http://keep.your.dirty/little/hands/out/of_my_stuff!  http://keep.your.dirty/little/hands/out/of_my_stuff!  http://keep.your.dirty/little/hands/out/of_my_stuff!  http://keep.your.dirty/little/hands/out/of_my_stuff!
+		h3.typl8-gamma And so onto figures (yowser!)..
+		img#typeAnatomyIllustration(src="http://typeplate.com/img/type-anatomy.jpg" alt="Anatomy of type illustration")
+		figure
+			figcaption
+				<strong> Fig. 4.2 |</strong> Type Anatomy, an excerpt from blah blah ...
+
+
+
+
+
+
+		
+		//- bootstrap 3.3.6 js CDN
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
+
